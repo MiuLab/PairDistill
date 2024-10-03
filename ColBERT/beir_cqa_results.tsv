@@ -1,0 +1,13 @@
+Dataset      colbertv2-pair3.0-cont2-2  colbertv2
+android      0.4531                     0.4358
+english      0.4491                     0.4271
+gaming       0.5591                     0.5431
+gis          0.3503                     0.3522
+mathematica  0.2641                     0.2534
+physics      0.4161                     0.4001
+programmers  0.3782                     0.3638
+stats        0.3455                     0.3350
+tex          0.2888                     0.2788
+unix         0.3566                     0.3433
+webmasters   0.3679                     0.3516
+wordpress    0.3256                     0.3168

@@ -1,0 +1,43 @@
+defaults:
+  - config
+  - override task: dpr_pair_distill
+  - override trainer: gpu_1_host
+  - override task/optim: adamw
+
+task:
+  shared_model: false
+  in_batch_eval: true
+  use_pair_scores: true
+  pair_loss_alpha: 1.0
+  softmax_temperature: 1.0
+  optim:
+    lr: 3e-5
+  warmup_steps: 10000
+
+datamodule:
+  _target_: dpr_scale.datamodule.dpr.DenseRetrieverMultiJsonlPairDistillDataModule
+  corpus_path: /work/cwhuang0921/fine-grained-distillation/data/msmarco/collection_dpr.tsv
+  queries_path: /work/cwhuang0921/fine-grained-distillation/data/msmarco/queries.train.tsv
+  train_path: [/work/cwhuang0921/fine-grained-distillation/data/msmarco/official_neg63_point_mini_pair_train.jsonl]
+  val_path: /work/cwhuang0921/fine-grained-distillation/data/msmarco/official_neg63_point_mini_pair_dev.jsonl
+  test_path: /work/cwhuang0921/fine-grained-distillation/data/msmarco/official_neg63_point_mini_pair_dev.jsonl
+  batch_size: 6
+  n_passages: 64
+  drop_last: false
+  use_title: false
+
+trainer:
+  gpus: 6
+  num_nodes: 1
+  max_epochs: 1
+  num_sanity_val_steps: 0
+  log_every_n_steps: 10
+  val_check_interval: 0.25
+  gradient_clip_val: 2.0
+  precision: 16
+  strategy: ddp
+
+checkpoint_callback:
+  monitor: valid_loss
+  mode: min
+  every_n_train_steps: 10000

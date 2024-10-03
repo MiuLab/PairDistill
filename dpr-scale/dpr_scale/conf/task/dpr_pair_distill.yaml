@@ -1,0 +1,10 @@
+# @package _group_
+_target_: dpr_scale.task.dpr_pair_distill_task.DPRPairDistillTask
+shared_model: false
+in_batch_eval: true
+# Temporary till we reformat LightningModule
+datamodule: null
+warmup_steps: 0 # avoid error in inference
+pretrained_checkpoint_path:
+use_pair_scores: true
+pair_loss_alpha: 1.0
