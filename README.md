@@ -7,6 +7,9 @@ PairDistill: Pairwise Relevance Distillation for Dense Retrieval
 
 Source code, trained models, and data of our paper **"PairDistill: Pairwise Relevance Distillation for Dense Retrieval"**, accepted to **EMNLP 2024 Main Conference**.
 
+<img width="1380" alt="image" src="https://github.com/user-attachments/assets/41c4c6d4-2934-4631-8135-58ca18336715">
+
+
 Please cite the following reference if you find our code, models, and datasets useful.
 
 ```
