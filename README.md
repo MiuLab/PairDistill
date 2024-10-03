@@ -1,4 +1,4 @@
-# PairDistill: Pairwise Relevance Distillation for Dense Retrieval
+PairDistill: Pairwise Relevance Distillation for Dense Retrieval
 ===
 
 Source code, trained models, and data of our paper "PairDistill: Pairwise Relevance Distillation for Dense Retrieval", accepted to EMNLP 2024 Main Conference.
