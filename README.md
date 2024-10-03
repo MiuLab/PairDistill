@@ -18,13 +18,33 @@ Please cite the following reference if you find our code, models, and datasets u
 }
 ```
 
-
 <img width="1380" alt="image" src="https://github.com/user-attachments/assets/41c4c6d4-2934-4631-8135-58ca18336715">
-
 
 
 ## Overview
 **PairDistill** is a pairwise relevance distillation framework designed to enhance the retrieval performance of dense retrieval models. PairDistill leverages the pairwise relevance signals to guide the distillation process. **PairDistill** achieves superior performance on [MS MARCO](https://microsoft.github.io/msmarco/), [BEIR](https://github.com/beir-cellar/beir), and [LoTTE](https://github.com/stanford-futuredata/ColBERT/blob/main/LoTTE.md).
+
+
+## Install Dependencies
+
+Make a new Python 3.9+ environment using `virtualenv` or `conda`.
+
+```bash
+conda create -n pair-distill python=3.10
+conda activate pair-distill
+# Install python dependencies. We specify the versions in the requirements.txt file, but newer versions should work generally okay.
+pip install -r requirements.txt
+```
+
+PairDistill supports two dense retrieval models: [ColBERT](https://github.com/stanford-futuredata/ColBERT) and [DPR through the dpr-scale library](https://github.com/facebookresearch/dpr-scale). Please install the corresponding dependencies for the model you want to use.
+
+```bash
+# Install ColBERT dependencies
+pip install -r ColBERT/requirements.txt
+
+# Install DPR dependencies
+pip install -r dpr-scale/requirements.txt
+```
 
 ## Training
 Please navigate to `ColBERT` for ColBERT training. You could directly run
