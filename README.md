@@ -1,9 +1,25 @@
 PairDistill: Pairwise Relevance Distillation for Dense Retrieval
 ===
 
-Source code, trained models, and data of our paper "PairDistill: Pairwise Relevance Distillation for Dense Retrieval", accepted to EMNLP 2024 Main Conference.
+<p align="center">
+📃 <a href="https://arxiv.org/abs/2410.01383" target="_blank">Paper</a> • 🤗 <a href="https://huggingface.co/collections/chaoweihuang/pairdistill-66fe6b0cfa6eae4704df9f5e" target="_blank">Models & Datasets</a>
+</p>
 
-Detailed instructions for running the code will be updated ASAP.
+Source code, trained models, and data of our paper **"PairDistill: Pairwise Relevance Distillation for Dense Retrieval"**, accepted to **EMNLP 2024 Main Conference**.
+
+Please cite the following reference if you find our code, models, and datasets useful.
+
+```
+@inproceedings{huang2024pairdistill,
+      title={PairDistill: Pairwise Relevance Distillation for Dense Retrieval}, 
+      author={Chao-Wei Huang and Yun-Nung Chen},
+      year={2024},
+      booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)}
+}
+```
+
+## Overview
+**PairDistill** is a pairwise relevance distillation framework designed to enhance the retrieval performance of dense retrieval models. PairDistill leverages the pairwise relevance signals to guide the distillation process. **PairDistill** achieves superior performance on [MS MARCO](https://microsoft.github.io/msmarco/), [BEIR](https://github.com/beir-cellar/beir), and [LoTTE](https://github.com/stanford-futuredata/ColBERT/blob/main/LoTTE.md).
 
 ## Training
 Please navigate to `ColBERT` for ColBERT training. You could directly run
