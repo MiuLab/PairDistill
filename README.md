@@ -7,18 +7,29 @@ PairDistill: Pairwise Relevance Distillation for Dense Retrieval
 
 Source code, trained models, and data of our paper **"PairDistill: Pairwise Relevance Distillation for Dense Retrieval"**, accepted to **EMNLP 2024 Main Conference**.
 
+<img width="1380" alt="image" src="https://github.com/user-attachments/assets/41c4c6d4-2934-4631-8135-58ca18336715">
+
+
 Please cite the following reference if you find our code, models, and datasets useful.
 
 ```
-@inproceedings{huang2024pairdistill,
-      title={PairDistill: Pairwise Relevance Distillation for Dense Retrieval}, 
-      author={Chao-Wei Huang and Yun-Nung Chen},
-      year={2024},
-      booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)}
+@inproceedings{huang-chen-2024-pairdistill,
+    title = "{P}air{D}istill: Pairwise Relevance Distillation for Dense Retrieval",
+    author = "Huang, Chao-Wei  and
+      Chen, Yun-Nung",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.1013",
+    doi = "10.18653/v1/2024.emnlp-main.1013",
+    pages = "18225--18237"
 }
 ```
-
-<img width="1380" alt="image" src="https://github.com/user-attachments/assets/41c4c6d4-2934-4631-8135-58ca18336715">
 
 
 ## Overview
