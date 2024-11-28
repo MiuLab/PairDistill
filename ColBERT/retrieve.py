@@ -4,7 +4,7 @@ from colbert import Searcher
 
 
 if __name__ == '__main__':
-    with Run().context(RunConfig(nranks=4, experiment="official-neg63-point-mini-pair-r2-4-colbertv2")):
+    with Run().context(RunConfig(nranks=4, experiment="PairDistill")):
 
         config = ColBERTConfig(
             root="experiments",
